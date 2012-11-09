@@ -9,7 +9,7 @@ use Pod::Usage;
 use Digest::MD5 qw(md5_hex);
 use Digest::SHA qw(sha1_hex);
 
-my $VERSION = "0.0.1"; # May be required to upload script to CPAN i.e. http://www.cpan.org/scripts/submitting.html
+my $VERSION = "0.0.2"; # May be required to upload script to CPAN i.e. http://www.cpan.org/scripts/submitting.html
 
 # http://ctas.paterva.com/view/Specification#Message_Wrapper
 print("<MaltegoMessage>\n");
@@ -56,20 +56,19 @@ hash-maltego-local-transform.pl - "MD5 and SHA-1 Hash - Maltego Local Transform"
 
 =head1 VERSION
 
-This documentation refers to hash-maltego.pl Alpha v0.0.1
+This documentation refers to from_email-to_md5_and_sha1-maltego-local-transform.pl
 
 =head1 CONFIGURATION
 
 From Manage->Transform->New Transform
 Display Name: "To SHA-1 and MD5 Hash"
 For "Description", copy the text from the DESCRIPTION POD section below
-Transform ID is "hash"
-Author is "Christian Heinrich"
+Author is "Christian Heinrich" or "@cmlh"
 Input entity type is "E-mail" but can be any entity type based on intended use
 
 =head1 USAGE
 
-crypto-hash.pl [Input E-mail Entity]
+from_email-to_md5_and_sha1-maltego-local-transform.pl [Input E-mail Entity]
 
 =head1 REQUIRED ARGUEMENTS
  				
@@ -77,13 +76,19 @@ crypto-hash.pl [Input E-mail Entity]
 
 =head1 DESCRIPTION
 
-Returns the SHA-1 and MD5 entity into Maltego
+Returns the SHA-1 and MD5 entities into Maltego
 
 =head1 DEPENDENCIES
+
+Carp CPAN Module
 
 =head1 PREREQUISITES
 
 =head1 COREQUISITES
+
+=head1 MALTEGO
+
+v3.2.1 "Radium"
 
 =head1 OSNAMES
 
