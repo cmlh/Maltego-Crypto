@@ -1,4 +1,4 @@
-#/usr/bin/env perl
+#!/usr/bin/env perl
 # The above shebang is for "perlbrew", otherwise use /usr/bin/perl
 #
 # Please refer to the Plain Old Documentation (POD) at the end of this Perl Script for further information
@@ -7,7 +7,7 @@ use strict;
 use Carp;
 use Pod::Usage;
 
-my $VERSION = "0.0.1"; # May be required to upload script to CPAN i.e. http://www.cpan.org/scripts/submitting.html
+my $VERSION = "0.0.2"; # May be required to upload script to CPAN i.e. http://www.cpan.org/scripts/submitting.html
 
 # http://ctas.paterva.com/view/Specification#Message_Wrapper
 print("<MaltegoMessage>\n");
@@ -75,9 +75,15 @@ Returns the SHA-1 and MD5 hash entities of Maltego
 
 =head1 DEPENDENCIES
 
+Carp CPAN Module
+
 =head1 PREREQUISITES
 
 =head1 COREQUISITES
+
+=head1 MALTEGO
+
+v3.2.1 "Radium"
 
 =head1 OSNAMES
 
